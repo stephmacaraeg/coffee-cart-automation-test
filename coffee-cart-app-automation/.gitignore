@@ -1,2 +1,6 @@
+# Virtual Environment
 venv/
+env/
+.venv/
+*.pyc
 .DS_Store
