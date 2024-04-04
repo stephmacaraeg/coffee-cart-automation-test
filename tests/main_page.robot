@@ -1,8 +1,10 @@
 *** Settings ***
 Documentation    Sample Test Suite
-Library          OperatingSystem
+Library          SeleniumLibrary
+Resource         ../resources/keywords/common_keywords.robot
+Resource         ../resources/variables/environment_variables.robot
 
 *** Test Cases ***
-Print Hello World
-    ${message}=    Set Variable    Hello, world!
-    Log    ${message}
+Example test case
+    Open Browser to URL    ${base_url}
+
